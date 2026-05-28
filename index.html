@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matthieu Gouin — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: #f5f0e8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(2rem, 6vw, 4rem);
+    letter-spacing: 0.08em;
+    color: #2a2219;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  h1 span {
+    display: block;
+    font-weight: 600;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  a.btn {
+    display: block;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #2a2219;
+    color: #2a2219;
+    background: transparent;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  a.btn:hover {
+    background: #2a2219;
+    color: #f5f0e8;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 1.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: #9c8e7a;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <h1>Matthieu Gouin<span>Portfolio</span></h1>
+  <nav class="buttons">
+    <a class="btn" href="dessins.html">Dessins</a>
+    <a class="btn" href="peintures.html">Peintures</a>
+  </nav>
+  <footer>&copy; Matthieu Gouin</footer>
+</body>
+</html>

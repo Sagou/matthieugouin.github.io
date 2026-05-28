@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dessins — Matthieu Gouin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: #f5f0e8;
+    min-height: 100vh;
+    padding: 3rem 2rem 5rem;
+  }
+
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    letter-spacing: 0.05em;
+    color: #2a2219;
+  }
+
+  a.retour {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #9c8e7a;
+    border-bottom: 1px solid #9c8e7a;
+    padding-bottom: 2px;
+    transition: color 0.2s;
+  }
+
+  a.retour:hover { color: #2a2219; border-color: #2a2219; }
+
+  .grille {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .carte {
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #e0d8cc;
+    transition: transform 0.25s;
+  }
+
+  .carte:hover { transform: translateY(-4px); }
+
+  .carte img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Zone placeholder quand il n'y a pas encore d'images */
+  .placeholder {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: #e8e0d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b0a090;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .carte-info {
+    padding: 0.75rem 1rem;
+  }
+
+  .carte-info p {
+    font-size: 0.85rem;
+    color: #6b5f52;
+    font-weight: 300;
+  }
+
+  .vide {
+    max-width: 1100px;
+    margin: 4rem auto;
+    text-align: center;
+    color: #9c8e7a;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Dessins</h1>
+    <a class="retour" href="index.html">← Accueil</a>
+  </header>
+
+  <!-- 
+    ════════════════════════════════════════════════════════
+    COMMENT AJOUTER TES DESSINS :
+
+    Remplace chaque bloc ci-dessous par :
+
+    <div class="carte">
+      <img src="images/mon-dessin.jpg" alt="Description courte">
+      <div class="carte-info">
+        <p>Titre ou date si tu veux</p>
+      </div>
+    </div>
+
+    Mets tes images dans un dossier "images/" à côté de ce fichier.
+    ════════════════════════════════════════════════════════
+  -->
+
+  <div class="grille">
+    <div class="carte">
+      <div class="placeholder">Ton dessin ici</div>
+      <div class="carte-info"><p>Exemple — remplace par une vraie image</p></div>
+    </div>
+    <div class="carte">
+      <div class="placeholder">Ton dessin ici</div>
+      <div class="carte-info"><p>Exemple — remplace par une vraie image</p></div>
+    </div>
+    <div class="carte">
+      <div class="placeholder">Ton dessin ici</div>
+      <div class="carte-info"><p>Exemple — remplace par une vraie image</p></div>
+    </div>
+  </div>
+
+</body>
+</html>
